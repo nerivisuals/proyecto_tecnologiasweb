@@ -1,0 +1,50 @@
+.bg-dark {
+    background-color: black !important; /* Color gris oscuro */
+  }
+
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar el video para que cubra todo el área */
+    z-index: -1; /* Para que el video esté detrás del contenido */
+  }
+
+  .video-section {
+    position: relative;
+    height: 100vh; /* Sección ocupa toda la altura de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+
+  .countdown {
+    font-size: 3rem; 
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(169, 19, 19, 0.4);
+    color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    margin: 20px 0; 
+    transition: transform 0.3s; 
+}
+
+.countdown:hover {
+    transform: scale(1.05); 
+}
+
+
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.location-info {
+    text-align: center;
+    font-size: 1.25rem;
+}

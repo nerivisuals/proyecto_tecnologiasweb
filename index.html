@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Alerta decorada-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Interpol</title>
+
+
+  </head>
+  <body  class="bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand" href="#">
+            <img src="images/interpol_logo.png" width="100"  alt="">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#albums">Albums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#concerts">Concerts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <section class="video-section">
+        <video class="video-background" autoplay muted loop>
+          <source src="videos/ragebackhome.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="container">
+          <h1>We Are Interpol</h1>
+          <p>American rock band from Manhattan</p>
+          <a href="#albums" class="btn btn-danger">Get to know us</a>
+        </div>
+      </section>
+
+
+
+      <section id="albums" class="album-section py-5 bg-danger">
+        <div class="container">
+          <h2 class="text-center mb-4">Our Albums</h2>
+          <div class="row g-4">
+    
+            <!-- Card de Álbum 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/turnobrightlights.jpg" class="card-img-top" alt="Álbum 1">
+                <div class="card-body text-dark">
+                  <h5 class="card-title">Turn on the Bright Lights</h5>
+                  <p class="card-text">Turn On the Bright Lights is Interpol's debut album, released in 2002. It's praised for its dark, atmospheric sound, blending post-punk influences with brooding melodies.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#turnonthebrightlights">
+                        More Info
+                      </button>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card de Álbum 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <img src="images/ourlovetoadmire.jpg" class="card-img-top" alt="Álbum 1">
+                  <div class="card-body text-dark">
+                    <h5 class="card-title">Our Love To Admire</h5>
+                    <p class="card-text">Our Love to Admire is Interpol's third album, released in 2007. It features a more polished and expansive sound, incorporating orchestral elements into their post-punk style.</p>
+                  </div>
+                  <div class="card-footer">
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ourlovetoadmire">
+                          More Info
+                        </button>
+                  </div>
+                </div>
+              </div>
+    
+            <!-- Card de Álbum 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <img src="images/antics.jpeg" class="card-img-top" alt="Álbum 1">
+                  <div class="card-body text-dark">
+                    <h5 class="card-title">Antics</h5>
+                    <p class="card-text">Antics is Interpol's second album, released in 2004. It builds on their debut's sound with more refined melodies and dynamic arrangements, featuring hit singles like "Slow Hands" and "Evil."</p>
+                  </div>
+                  <div class="card-footer">
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#antics">
+                          More Info
+                        </button>
+                  </div>
+                </div>
+              </div>
+    
+          </div>
+        </div>
+      </section>
+
+      <div id="concerts" class="container py-5">
+        <h2 class="section-title">Countdown to the next Concert</h2>
+        <div class="countdown" id="countdown"></div>
+        <div class="location-info">
+            <p><strong>Location:</strong> Autódromo de León.</p>
+            <p><strong>City:</strong> León, Gto.</p>
+            <p><strong>Date:</strong> September 25, 2024</p>
+            <p><strong>Time:</strong> 8:00 PM (Mexico Time)</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14895.68610579152!2d-101.5744552!3d21.0358257!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b965453eed7cb%3A0x314f13fbb3c39d65!2zQXV0w7Nkcm9tbyBkZSBMZcOzbg!5e0!3m2!1ses-419!2smx!4v1726783615643!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#tickets">
+                Reserve Tickets
+            </button>
+        </div>
+
+        
+             
+    </div>
+
+    <footer class="bg-danger text-light text-center py-3">
+        <div class="container">
+            <p class="mb-0">Realizado por Jesús Ángel Neri Hernández</p>
+        </div>
+    </footer>
+
+
+    <!-- Tickets modal -->
+    <div class="modal fade" id="tickets" tabindex="-1" role="dialog" aria-labelledby="buyTicketsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="buyTicketsModalLabel">Reserve Tickets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="ticketForm">
+                        <div class="form-group text-dark">
+                            <label for="ticketQuantity">Number of Tickets</label>
+                            <input type="number" class="form-control" id="ticketQuantity" min="1" value="1">
+                        </div>
+                        <div class="form-group text-dark">
+                            <label for="ticketType">Select Ticket Type</label>
+                            <select class="form-control" id="ticketType">
+                                <option value="general">General Admission</option>
+                                <option value="vip">VIP Admission</option>
+                                <option value="student">Student Ticket</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-dark">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-dark">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="confirmPurchase">Reserve Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+
+    <!-- Modals -->
+     
+    <!-- Turn on the Bright Lights -->
+    <div class="modal fade" id="turnonthebrightlights" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">Turn On The Bright Lights</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body text-dark">
+            <p>Released in August 2002, Turn On the Bright Lights is Interpol's critically acclaimed debut album. Drawing heavy influence from the post-punk revival, the album combines melancholic vocals, intricate guitar work, and atmospheric production. It features standout tracks like "Obstacle 1," "PDA," and "Leif Erikson," which embody the band's dark, urban sound. The album's emotional depth, paired with its sleek, minimalist aesthetic, helped define the indie rock landscape of the early 2000s. Its haunting, introspective lyrics, alongside echoing guitars and driving bass lines, cemented Interpol as one of the key players in the post-punk revival movement.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="400" src="https://www.youtube.com/embed/Fz7AhhTTpxY" title="Interpol&#39;s Turn on the Bright Lights in 5 Minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Our Love To Admire -->
+    <div class="modal fade" id="ourlovetoadmire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">Our Love To Admire</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body text-dark">
+            <p>Released in July 2007, Our Love to Admire is Interpol's third studio album, showcasing a mature evolution in their sound. The album combines the band's signature dark, atmospheric style with a richer, more layered production. Tracks like "The Heinrich Maneuver," "PDA," and "All the Rage Back Home" highlight the band's ability to blend driving rhythms with introspective lyrics. The inclusion of orchestral arrangements adds depth to the overall sound, making it one of their most ambitious works. While it received mixed reviews compared to their earlier albums, Our Love to Admire solidified Interpol's status in the indie rock scene and demonstrated their willingness to experiment and grow artistically.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="821" height="616" src="https://www.youtube.com/embed/Wm2vR15ew74" title="Interpol - Interview with Paul Banks &amp; Carlos D" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="821" height="616" src="https://www.youtube.com/embed/Wm2vR15ew74" title="Interpol - Interview with Paul Banks &amp; Carlos D" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+      
+
+    <!-- Antics -->
+    <div class="modal fade" id="antics" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">Antics</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body text-dark">
+            <p>Released in September 2004, Antics is Interpol's critically acclaimed sophomore album. Following the success of their debut, Turn On the Bright Lights, this album showcases a more refined sound with intricate guitar work, pulsing bass lines, and haunting vocals. Tracks like "Slow Hands," "Evil," and "Narc" highlight the band's ability to blend dark, brooding themes with catchy hooks and melodic depth. The production is polished, enhancing the atmospheric qualities that define Interpol's style. Antics received widespread praise for its cohesiveness and lyrical introspection, solidifying Interpol's place in the post-punk revival and indie rock scenes of the early 2000s</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/hZHG40Zj7Qo" title="A Brief History of Interpol | Meet The Band" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    
+      
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
